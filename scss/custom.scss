@@ -1,0 +1,155 @@
+@import "../node_modules/bootstrap/scss/functions"; 
+@import "../node_modules/bootstrap/scss/variables";
+
+$theme-colors: (
+ 
+  gray-100: $gray-100,
+  gray-200: $gray-200,
+  gray-300: $gray-300,
+  gray-400: $gray-400,
+  gray-500: $gray-500,
+  gray-600: $gray-600,
+  gray-700: $gray-700,
+  gray-800: $gray-800,
+  gray-900: $gray-900,
+  primary: #FFCB07,
+  secondary: #02A9E0,
+  tertiary: #ED008C,
+  primary-soft: #FFCB26,
+  brand-dark: #0D314F,
+);
+
+* {
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.mw-sm {
+    max-width: 600px;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem !important;
+}
+.rounded-2xl {
+    border-radius: 1rem !important;
+}
+
+.rounded-3xl {
+    border-radius: 1.5rem !important;
+}
+
+.pricing-container {
+    @media (max-width: 994px) {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pricing-card {
+    @media (max-width: 994px) {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    @media (min-width: 1200px) {
+        width: 248px;
+        padding: 24px;
+    }
+    width: 226px;
+    padding: 16px;
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+
+    ul:first-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    @media (max-width: 994px) {
+        ul:first-child {
+     
+            padding-right: 2rem;
+
+            li {
+                padding: 0px !important;
+            }
+        }
+    }
+}
+
+.image-container img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+
+    @media (max-width: 994px) {
+        height: 128px;
+    }
+}
+
+
+    
+    
+
+
+.text-size-xs {
+    font-size: 0.870rem;
+}
+
+.text-size-2xs {
+    font-size: 0.75rem;
+}
+
+.discount {
+    top: -40px;
+    left: 84px; 
+}
+
+.seperator {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+
+    @media (max-width: 994px) {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+}
+.logo-container {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    text-align: center;
+}
+.logo-container img {
+    max-width: 100%;
+    height: 44px; /* Logo yüksekliğini küçültüyoruz */
+    width: auto;
+
+    @media (max-width: 500px) {
+        height: 32px;
+    }
+}
+.logo-container:hover {
+    filter: grayscale(0%);
+}
+
+.table-container {
+    margin-top: 20px;
+}
+.pagination {
+    justify-content: center;
+}
+
